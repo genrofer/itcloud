@@ -40,6 +40,10 @@
 			overflow-x: hidden;
 		}
 
+		.letter-spacing-1 {
+			letter-spacing: 1px;
+		}
+
 		.show-week-numbers {
 			--litepicker-month-width: calc(var(--litepicker-day-width) * 8)
 		}
@@ -2115,6 +2119,12 @@
 		.CybotCookiebotDialogBodyContentLabelPersonalInformation {
 			font-weight: 400 !important
 		}
+
+		.question-img {
+			margin-left: -100px;
+			transform: translateY(80px);
+		}
+
 	</style>
 	<style type="text/css" id="CookieConsentStateDisplayStyles">
 		.cookieconsent-optin,
@@ -3152,41 +3162,8 @@
 			<div class="container header__main__container" style="">
 				<!-- logo -->
 				<div class="header__main__logo">
-					<a href="https://viamsterdam.com" class="header__main__logo__link js-nav-item">
-						<svg width="160" height="48" viewBox="0 0 160 48" fill="none"
-							xmlns="http://www.w3.org/2000/svg">
-							<g clip-path="url(#clip0_2451_4099)">
-								<path d="M0 0.0367126L27.3263 48.001L30.6999 38.5858L8.61531 0.0367126H0Z"
-									fill="#333333"></path>
-								<path d="M81.138 29.2514C80.2266 29.2514 79.8238 28.7867 79.8238 27.8932V20.745H82.1551V18.9376H79.7633V15.5422H77.3867V18.9376H75.4078V20.7604H77.2558V27.6277C77.2558 29.9151 78.6556 31.3907 80.997 31.3907C81.39 31.3809 81.7811 31.333 82.1651 31.2477C82.4773 31.1609 82.568 31.1252 82.8248 31.0384V28.848C82.2895 29.0797 81.7189 29.2162 81.138 29.2514Z"
-									fill="#333333"></path>
-								<path d="M93.9124 26.1521C93.9124 28.031 92.9557 29.2411 91.1581 29.2462C89.3606 29.2513 88.3938 28.031 88.3938 26.1521V18.9375H86.0474V26.4431C86.0474 29.3637 88.0212 31.3907 91.0826 31.3907H91.2085C94.2901 31.3907 96.2437 29.3484 96.2437 26.4431V18.9375H93.8973L93.9124 26.1521Z"
-									fill="#333333"></path>
-								<path d="M108.61 20.2242C107.64 19.395 106.405 18.9522 105.136 18.9784C101.546 18.9784 99.5972 21.7049 99.5972 25.2637C99.5972 28.8225 101.566 31.4418 105.136 31.4418C106.391 31.4748 107.618 31.0672 108.61 30.2878V31.3448H110.846V12.254H108.61V20.2242ZM105.111 29.4147C102.915 29.4147 101.586 27.786 101.586 25.1769C101.586 22.5678 102.9 20.9697 105.111 20.9697C107.321 20.9697 108.59 22.5984 108.59 25.1769C108.59 27.7553 107.251 29.4352 105.111 29.4352V29.4147Z"
-									fill="#333333"></path>
-								<path d="M117.482 18.9426H115.116V31.3447H117.482V18.9426Z" fill="#333333">
-								</path>
-								<path d="M126.284 18.9785C122.694 18.9785 120.745 21.705 120.745 25.2638C120.745 28.8225 122.714 31.4418 126.284 31.4418C129.632 31.4418 131.793 29.0625 131.793 25.3403C131.793 21.6182 129.632 18.9785 126.284 18.9785ZM126.259 29.4352C124.063 29.4352 122.734 27.8065 122.734 25.1974C122.734 22.5883 124.048 20.9902 126.259 20.9902C128.469 20.9902 129.738 22.6189 129.738 25.1974C129.738 27.7758 128.399 29.4352 126.259 29.4352Z"
-									fill="#333333"></path>
-								<path d="M146.148 27.5664H146.108H146.037H145.992L139.637 12.2591H136.898L144.879 31.3345H144.884H147.256H147.261L154.235 12.2591H151.496L146.148 27.5664Z"
-									fill="#333333"></path>
-								<path d="M116.314 13.7552C116.041 13.7552 115.775 13.8372 115.548 13.9909C115.321 14.1447 115.144 14.3632 115.04 14.6188C114.935 14.8744 114.908 15.1557 114.961 15.4271C115.014 15.6985 115.146 15.9478 115.339 16.1434C115.532 16.3391 115.777 16.4723 116.045 16.5263C116.313 16.5803 116.59 16.5526 116.842 16.4467C117.094 16.3408 117.31 16.1615 117.461 15.9314C117.613 15.7013 117.694 15.4309 117.694 15.1542C117.693 14.7835 117.547 14.4285 117.288 14.1664C117.03 13.9043 116.68 13.7565 116.314 13.7552Z"
-									fill="#333333"></path>
-								<path d="M159.799 18.9426H157.432V31.3447H159.799V18.9426Z" fill="#333333">
-								</path>
-								<path d="M158.61 16.5532C158.883 16.5532 159.15 16.4711 159.377 16.3174C159.604 16.1637 159.78 15.9452 159.885 15.6895C159.989 15.4339 160.017 15.1526 159.963 14.8812C159.91 14.6099 159.779 14.3606 159.586 14.1649C159.393 13.9693 159.147 13.836 158.879 13.782C158.612 13.7281 158.334 13.7558 158.082 13.8617C157.83 13.9675 157.615 14.1469 157.463 14.3769C157.312 14.607 157.231 14.8775 157.231 15.1542C157.231 15.3379 157.266 15.5198 157.336 15.6895C157.405 15.8593 157.507 16.0135 157.635 16.1434C157.763 16.2733 157.915 16.3764 158.082 16.4467C158.25 16.517 158.429 16.5532 158.61 16.5532Z"
-									fill="#333333"></path>
-								<path d="M67.1903 20.9339L64.4512 20.3366C63.3938 20.1323 61.6314 19.6371 61.4854 17.656C61.3595 15.8945 63.0866 14.761 65.3223 14.7048C67.719 14.6384 69.2095 15.4605 69.6979 17.896H71.6767C71.6767 14.6282 69.3303 12.4174 65.2921 12.4736C61.5056 12.5297 58.9476 14.5159 58.9476 17.799C58.9476 20.4029 60.8308 21.9551 63.4794 22.5882L66.5458 23.2571C69.1944 23.7677 70.1611 24.6408 70.1611 26.2338C70.1611 27.8268 68.575 29.1748 66.002 29.1748C62.7241 29.1748 61.284 27.1324 60.9668 25.0901L58.5398 25.6671C59.0836 29.1697 61.6868 31.3958 65.997 31.3958C70.3928 31.3958 72.6435 29.3535 72.6334 26.1317C72.5881 22.3381 69.6425 21.4905 67.1903 20.9339Z"
-									fill="#333333"></path>
-								<path d="M43.0413 8.67993C45.4051 8.67993 47.3213 6.73686 47.3213 4.33996C47.3213 1.94307 45.4051 0 43.0413 0C40.6776 0 38.7614 1.94307 38.7614 4.33996C38.7614 6.73686 40.6776 8.67993 43.0413 8.67993Z"
-									fill="#333333"></path>
-							</g>
-							<defs>
-								<clipPath id="clip0_2451_4099">
-									<rect width="160" height="48" fill="white"></rect>
-								</clipPath>
-							</defs>
-						</svg>
+					<a href="https://itcloud.uz" class="header__main__logo__link js-nav-item">
+
 					</a>
 				</div>
 
@@ -3195,8 +3172,8 @@
 					<div class="main-nav">
 						<ul id="main-nav" class="menu">
 							<li class="menu-item about">
-								<a class="menu-item__link" href="about-us.html"
-									title="About us">About us <div class="menu-item__animation en"
+								<a class="menu-item__link" href="about-us.html" title="About us">About us <div
+										class="menu-item__animation en"
 										data-path="https://viamsterdam.com/wp-content/themes/studio-vi/assets/animations/nav-about-en.json">
 										<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 218"
 											width="1920" height="218" preserveAspectRatio="xMidYMid meet"
@@ -3246,8 +3223,8 @@
 
 							</li>
 							<li class="menu-item services">
-								<a class="menu-item__link" href="our-services.html"
-									title="Services">Services <div class="menu-item__animation en"
+								<a class="menu-item__link" href="our-services.html" title="Services">Services
+									<div class="menu-item__animation en"
 										data-path="https://viamsterdam.com/wp-content/themes/studio-vi/assets/animations/nav-service-en.json">
 										<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 341 406"
 											width="341" height="406" preserveAspectRatio="xMidYMid meet"
@@ -3297,8 +3274,8 @@
 
 							</li>
 							<li class="menu-item works">
-								<a class="menu-item__link" href="our-work.html"
-									title="Work">Work <div class="menu-item__animation en"
+								<a class="menu-item__link" href="our-work.html" title="Work">Work <div
+										class="menu-item__animation en"
 										data-path="https://viamsterdam.com/wp-content/themes/studio-vi/assets/animations/nav-work-en.json">
 										<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1576 351"
 											width="1576" height="351" preserveAspectRatio="xMidYMid meet"
@@ -3355,8 +3332,8 @@
 
 							</li>
 							<li class="menu-item careers">
-								<a class="menu-item__link" href="contact.html"
-									title="Careers">Contact <div class="menu-item__animation en"
+								<a class="menu-item__link" href="contact.html" title="Careers">Contact <div
+										class="menu-item__animation en"
 										data-path="https://viamsterdam.com/wp-content/themes/studio-vi/assets/animations/nav-careers.json">
 										<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 634 428"
 											width="634" height="428" preserveAspectRatio="xMidYMid meet"
@@ -3464,7 +3441,7 @@
 								</div> <!-- side menu secondary nav -->
 								<div class="secondary-nav">
 									<ul id="secondary-nav" class="menu">
-										
+
 										<li class="menu-item">
 											<a class="careers anchor-link"
 												href="https://viamsterdam.com/contact/"
@@ -3598,10 +3575,15 @@
 							<div class="container">
 								<div class="row " style="margin-top: -50px; margin-left: -130px;">
 									<div class="col-lg-8 offset-lg-2 spacing-pb-48 banner__title__wrapper">
-										<h1 style="line-height: 110px; font-size: 90px;" class="font--weight--700 banner__title h2">
-											<span>IT&nbsp;CLOUD&nbsp; 
-												<br></span><p	>Brandingizni &nbsp;rivojlanishida&nbsp;&nbsp;</p><p><span
-													class="circle-word">yordam beramiz!<span
+										<h1 style="line-height: 120px; font-size: 90px;"
+											class="font--weight--700 banner__title h2">
+											<span>Biznesingizni&nbsp;
+												<br></span>
+											<h1 style="font-size: 93px; letter-spacing: 3px;">
+												rivojlantirishda&nbsp;&nbsp;</h1>
+											<h1
+												style="font-size: 95px; letter-spacing: 8px; margin-top: 15px;">
+												yordam <span class="circle-word"> beramiz!<span
 														class="circle-lottie"
 														data-path="https://viamsterdam.com/wp-content/themes/studio-vi/assets/animations/Circle_7.json"><svg
 															xmlns="http://www.w3.org/2000/svg"
@@ -3635,15 +3617,17 @@
 																	</g>
 																</g>
 															</g>
-														</svg></span></span></p>
+														</svg></span></span></h1>
 										</h1>
 									</div>
 									<div class="col-lg-5 offset-lg-2">
 										<div class="content-block banner__content">
 											<p>Biz <strong>IT Cloud </strong>
-												jamoasi.Bizning maqsadimiz so'nggi texnologiya va bilimlardan foydalangan holda sizning biznesingiz va brandingizni rivojlantirsh.</p>
-											<a class="button" href="about-us.html"
-												target=""><span><span class="button__text">Biz
+												jamoasi.Bizning maqsadimiz so'nggi texnologiya va
+												bilimlardan foydalangan holda sizning biznesingiz va
+												brandingizni rivojlantirsh.</p>
+											<a class="button" href="about-us.html" target=""><span><span
+														class="button__text">Biz
 														haqimizda</span><span class="button__icon"><span
 															class="button__icon__main"><svg width="12"
 																height="12" viewBox="0 0 12 12"
@@ -3696,7 +3680,10 @@
 							<div class="container">
 								<div class="row">
 									<div class="col-lg-4 col-md-4 listBlock--grid__title">
-										<h3 class="h6 spacing-pb-24 text--uppercase">BIZNING VAZIFAMIZ</h3>
+										<h3 class="h4 font-weight-bolder spacing-p-24 text--uppercase">Nimalar
+											qila olamiz ?
+											<img class="question-img" src="./images/question.png" alt="">
+										</h3>
 									</div>
 									<div class="col-lg-7 offset-lg-1 col-md-8 listBlock--grid__wrapper">
 										<ul class="row listBlock--grid__list listBlock--grid__list--2-col">
@@ -3705,44 +3692,14 @@
 													<span class="number">01</span>
 													Design
 												</h4>
-												<div class="content-block spacing-pt-10">
-													<p>At the core of our design philosophy is
-														problem-solving. By understanding our client’s
-														objectives and values, we ensure that every aspect
-														of the design process is seamless. We focus on
-														providing immersive experiences and lasting
-														impressions for the users.</p>
-												</div>
-												<div class="listBlock--grid__item__link spacing-pt-48">
-													<a class="link-icon link-icon--blue"
-														href="our-services.html#design"
-														target="_self"><span
-															class="link-icon__inner"><span
-																class="link-icon__label">Read
-																more</span><span
-																class="link-icon__icon"><span
-																	class="link-icon__icon__main"><svg
-																		width="12" height="12"
-																		viewBox="0 0 12 12"
-																		fill="none"
-																		xmlns="http://www.w3.org/2000/svg">
-																		<path d="M1 11L10.5 1.5"
-																			stroke="#333333"></path>
-																		<path d="M4 1H11V8"
-																			stroke="#333333"></path>
-																	</svg>
-																</span><span
-																	class="link-icon__icon__secondary"><svg
-																		width="12" height="12"
-																		viewBox="0 0 12 12"
-																		fill="none"
-																		xmlns="http://www.w3.org/2000/svg">
-																		<path d="M1 11L10.5 1.5"
-																			stroke="#333333"></path>
-																		<path d="M4 1H11V8"
-																			stroke="#333333"></path>
-																	</svg>
-																</span></span></span></a>
+												<div class="content-block spacing-pt-1">
+													<p>Bizning dizayn falsafamizning asosi muammoni hal
+														qilishdir. Mijozimizning maqsadlari va
+														qadriyatlarini tushunish orqali biz dizayn
+														jarayonining har bir jihati uzluksiz bo'lishini
+														ta'minlaymiz. Biz foydalanuvchilar uchun ajoyib
+														tajriba va doimiy taassurotlarni taqdim etishga
+														e'tibor qaratamiz.</p>
 												</div>
 											</li>
 											<li class="listBlock--grid__item">
@@ -3751,51 +3708,19 @@
 													Development
 												</h4>
 												<div class="content-block spacing-pt-10">
-													<p>Here at Vi we carefully craft responsive and
-														performant websites, mobile apps and software
-														solutions for businesses. We choose the
-														development stack that fits your environment to
-														create scalable and sustainable solutions.
-														Alternatively, we offer fully dedicated
-														development teams to work on your in-house
-														projects.</p>
-												</div>
-												<div class="listBlock--grid__item__link spacing-pt-48">
-													<a class="link-icon link-icon--blue"
-														href="our-services.html#development"
-														target="_self"><span
-															class="link-icon__inner"><span
-																class="link-icon__label">Read
-																more</span><span
-																class="link-icon__icon"><span
-																	class="link-icon__icon__main"><svg
-																		width="12" height="12"
-																		viewBox="0 0 12 12"
-																		fill="none"
-																		xmlns="http://www.w3.org/2000/svg">
-																		<path d="M1 11L10.5 1.5"
-																			stroke="#333333"></path>
-																		<path d="M4 1H11V8"
-																			stroke="#333333"></path>
-																	</svg>
-																</span><span
-																	class="link-icon__icon__secondary"><svg
-																		width="12" height="12"
-																		viewBox="0 0 12 12"
-																		fill="none"
-																		xmlns="http://www.w3.org/2000/svg">
-																		<path d="M1 11L10.5 1.5"
-																			stroke="#333333"></path>
-																		<path d="M4 1H11V8"
-																			stroke="#333333"></path>
-																	</svg>
-																</span></span></span></a>
+													<p>Bu yerda Vi-da biz biznes uchun sezgir va samarali
+														veb-saytlar, mobil ilovalar va dasturiy
+														yechimlarni puxta ishlab chiqamiz. Biz
+														kengaytiriladigan va barqaror yechimlarni yaratish
+														uchun sizning muhitingizga mos ishlab chiqish
+														to'plamini tanlaymiz. Shu bilan bir qatorda, biz
+														sizning ichki loyi.</p>
 												</div>
 											</li>
 											<li class="listBlock--grid__item">
 												<h4 class="listBlock--grid__item__title">
 													<span class="number">03</span>
-													Conversational
+													Telegram bot
 												</h4>
 												<div class="content-block spacing-pt-10">
 													<p>Using AI technology we create custom conversational
@@ -3807,43 +3732,30 @@
 														seamless, fully automated, and personalized
 														experience for users.</p>
 												</div>
-												<div class="listBlock--grid__item__link spacing-pt-48">
-													<a class="link-icon link-icon--blue"
-														href="our-services.html#conversational"
-														target="_self"><span
-															class="link-icon__inner"><span
-																class="link-icon__label">Read
-																more</span><span
-																class="link-icon__icon"><span
-																	class="link-icon__icon__main"><svg
-																		width="12" height="12"
-																		viewBox="0 0 12 12"
-																		fill="none"
-																		xmlns="http://www.w3.org/2000/svg">
-																		<path d="M1 11L10.5 1.5"
-																			stroke="#333333"></path>
-																		<path d="M4 1H11V8"
-																			stroke="#333333"></path>
-																	</svg>
-																</span><span
-																	class="link-icon__icon__secondary"><svg
-																		width="12" height="12"
-																		viewBox="0 0 12 12"
-																		fill="none"
-																		xmlns="http://www.w3.org/2000/svg">
-																		<path d="M1 11L10.5 1.5"
-																			stroke="#333333"></path>
-																		<path d="M4 1H11V8"
-																			stroke="#333333"></path>
-																	</svg>
-																</span></span></span></a>
+											</li>
+											<li class="listBlock--grid__item">
+												<h4 class="listBlock--grid__item__title"
+													style="font-size: 35px;">
+													<span class="number">03</span>
+													Animation-video
+												</h4>
+												<div class="content-block spacing-pt-10">
+													<p>Using AI technology we create custom conversational
+														interfaces to meet a variety of business needs
+														from virtual sales assistants to customer care
+														models. These products can be integrated with
+														platforms such as WhatsApp, SMS, Messenger &amp;
+														website widgets, and as a widget on websites for a
+														seamless, fully automated, and personalized
+														experience for users.</p>
 												</div>
 											</li>
 										</ul>
 										<div class="spacing-pt-90">
 											<a class="button " href="our-services.html"
-												target="_self"><span><span class="button__text">Bizning xizmatlar
-														</span><span class="button__icon"><span
+												target="_self"><span><span class="button__text">Barcha
+														xizmatlar
+													</span><span class="button__icon"><span
 															class="button__icon__main"><svg width="12"
 																height="12" viewBox="0 0 12 12"
 																fill="none"
@@ -3877,7 +3789,7 @@
 									<div class="col-lg-4">
 										<div class="content-block spacing-pb-90 featuredItems__text">
 											<h3>Portfolio<br>
-												</h3>
+											</h3>
 										</div>
 									</div>
 								</div>
@@ -3958,8 +3870,8 @@
 
 								</ul>
 								<div class="spacing-pt-90 text--center">
-									<a class="button " href="our-work.html"
-										target="_self"><span><span class="button__text">See all
+									<a class="button " href="our-work.html" target="_self"><span><span
+												class="button__text">See all
 												projects</span><span class="button__icon"><span
 													class="button__icon__main"><svg width="12" height="12"
 														viewBox="0 0 12 12" fill="none"
@@ -3983,11 +3895,11 @@
 								<div class="row spacing-pb-90">
 									<div class="col-lg-6 col-xl-5">
 										<div class="content-block logosBlock__title">
-											<h3><strong><span class="crossed-word">Companies<span
+											<h3><strong><span class="crossed-word">Hamkorlarimiz<span
 															class="crossed-word__svg"
 															data-path="https://viamsterdam.com/wp-content/themes/studio-vi/assets/animations/en-companies.json"></span></span>
-													we<br>
-													work with</strong></h3>
+													<br>
+												</strong></h3>
 										</div>
 									</div>
 								</div>
@@ -4143,105 +4055,6 @@
 									</div>
 								</div>
 
-								<div class="row">
-									<div class="col-lg-2">
-										<h6 class="text--uppercase spacing-pb-48">INSIGHTS</h6>
-									</div>
-									<div class="col-lg-10">
-										<ul class="row archive__list featuredItems--small__list">
-
-											<li
-												class="col-md-6 archive__item featuredItems--small__item archive__item--video">
-												<a class="archive__item__inner"
-													href="https://viamsterdam.com/article/intuitive-user-experience-and-the-benefits-of-information-architecture/">
-
-													<div class="img-block archive__item__image">
-														<video class="archive__item__video" preload="meta"
-															loop="" muted="" playsinline="">
-															<source
-																src="https://viamsterdam.com/wp-content/uploads/2022/07/Header-16x9-1.mp4"
-																type="video/mp4">
-														</video>
-
-														<img data-src=""
-															src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
-															alt=""
-															class="archive__item__image__img lazy-img">
-														<noscript>
-															<img src="" alt="" class="lazy" />
-														</noscript>
-
-													</div>
-
-													<div class="archive__item__content">
-														<div class="caps archive__item__content__terms">
-															Jul 5, 2022</div>
-														<h2 class="h5 archive__item__content__title">
-															Intuitive User Experience: the Benefits of
-															Information Architecture</h2>
-													</div>
-												</a>
-											</li>
-											<li
-												class="col-md-6 archive__item featuredItems--small__item archive__item--video">
-												<a class="archive__item__inner"
-													href="https://viamsterdam.com/article/how-to-choose-your-cms/">
-
-													<div class="img-block archive__item__image">
-														<video class="archive__item__video" preload="meta"
-															loop="" muted="" playsinline="">
-															<source
-																src="https://viamsterdam.com/wp-content/uploads/2022/05/Header-white-background.mp4"
-																type="video/mp4">
-														</video>
-
-														<img data-src=""
-															src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
-															alt=""
-															class="archive__item__image__img lazy-img">
-														<noscript>
-															<img src="" alt="" class="lazy" />
-														</noscript>
-
-													</div>
-
-													<div class="archive__item__content">
-														<div class="caps archive__item__content__terms">
-															May 27, 2022</div>
-														<h2 class="h5 archive__item__content__title">How
-															to choose your CMS</h2>
-													</div>
-												</a>
-											</li>
-										</ul>
-
-										<div class="spacing-pt-90">
-											<a class="button " href="https://viamsterdam.com/insights/"
-												target="_self"><span><span class="button__text">Read more
-														articles</span><span class="button__icon"><span
-															class="button__icon__main"><svg width="12"
-																height="12" viewBox="0 0 12 12"
-																fill="none"
-																xmlns="http://www.w3.org/2000/svg">
-																<path d="M1 11L10.5 1.5"
-																	stroke="#333333"></path>
-																<path d="M4 1H11V8" stroke="#333333">
-																</path>
-															</svg>
-														</span><span class="button__icon__secondary"><svg
-																width="12" height="12"
-																viewBox="0 0 12 12" fill="none"
-																xmlns="http://www.w3.org/2000/svg">
-																<path d="M1 11L10.5 1.5"
-																	stroke="#333333"></path>
-																<path d="M4 1H11V8" stroke="#333333">
-																</path>
-															</svg>
-														</span></span></span></a>
-										</div>
-									</div>
-								</div>
-
 							</div>
 						</section>
 
@@ -4278,7 +4091,7 @@
 										data-path="https://viamsterdam.com/wp-content/themes/studio-vi/assets/animations/Circle_4.json"></span></span>
 							</h3>
 						</div>
-						<div class="spacing-pt-48"><a class="button " href="https://viamsterdam.com/contact/"
+						<div class="spacing-pt-48"><a class="button " href="contact.html"
 								target="_self"><span><span class="button__text">Start a project</span><span
 										class="button__icon"><span class="button__icon__main"><svg width="12"
 												height="12" viewBox="0 0 12 12" fill="none"
@@ -4317,20 +4130,20 @@
 					<div class="col-lg-2 col-md-3">
 						<h4 class="caps footer__main__title">ADDRESS</h4>
 						<div class="spacing-pt-24 footer__main__content footer__main__content--address">
-							<p class="p1"><span>Wibautstraat 131-D</span> <span>1091 GL Amsterdam</span></p>
+							<p class="p1"><span>Tashkent</span> <span>Chilanzar 5</span></p>
 						</div>
 					</div>
 					<!-- footer contacts -->
 					<div class="col-lg-3 col-md-3">
 						<h4 class="caps footer__main__title">CONTACT</h4>
 						<div class="spacing-pt-24 footer__main__content footer__main__content--contacts">
-							<a class="p1" href="mailto:hello@viamsterdam.com">hello@viamsterdam.com</a>
-							<a class="p1" href="tel:+31 20 777 00 17">+31 20 777 00 17</a>
+							<a class="p1" href="mailto:hello@viamsterdam.com">itcloud@gmail.com</a>
+							<a class="p1" href="tel:+998994583368">+998 99 458 33 68</a>
 						</div>
 					</div>
 					<!-- footer news letter -->
 					<div class="col-lg-3 col-md-3 newsletter">
-						<h4 class="caps footer__main__title">STAY UP TO DATE</h4>
+						<h4 class="caps footer__main__title">Biz bilan bog'laning</h4>
 						<div class="spacing-pt-24 footer__main__content footer__main__content--contacts">
 							<div role="form" class="wpcf7" id="wpcf7-f4258-o1" lang="en-US" dir="ltr">
 								<div class="screen-reader-response">
