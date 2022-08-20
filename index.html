@@ -726,6 +726,43 @@
 		.has-x-large-font-size {
 			font-size: var(--wp--preset--font-size--x-large) !important;
 		}
+
+		@media only screen and (max-width: 550px ) {
+			.banner {
+				padding-left: 120px;
+			}
+			.first-title {
+				line-height: 75px !important;
+			}
+			.banner-title {
+				font-size: 33px !important; 
+			}
+
+			.header__main__logo__link img{
+				width: 170px !important;
+				margin-top: -33px !important; 
+			}
+
+			.header__main__container {
+				margin-top: 10px;
+			}
+
+			.last-title {
+				letter-spacing: 6px !important;
+			}
+
+			.ytframe {
+				height: 350px !important;
+			}
+
+			.question-img {
+				display: none;
+			}
+
+			.archive__item__image__img {
+				width: 380px !important;
+			}
+		}
 	</style>
 	<link data-minify="1" rel="stylesheet" id="dnd-upload-cf7-css"
 		href="https://viamsterdam.com/wp-content/cache/min/1/wp-content/plugins/drag-and-drop-multiple-file-upload-contact-form-7/assets/css/dnd-upload-cf7.css?ver=1657023989"
@@ -3563,13 +3600,13 @@
 									<div class="col-lg-8 offset-lg-2 spacing-pb-48 banner__title__wrapper">
 										<h1 style="line-height: 120px; font-size: 90px;"
 											class="font--weight--700 banner__title h2">
-											<span>Biznesingizni&nbsp;
-												<br></span>
-											<h1 style="font-size: 93px; letter-spacing: 3px;">
+											<h1 class="banner-title first-title" style="line-height: 130px; font-size: 100px;">Biznesingizni&nbsp;
+												<br></h1>
+											<h1 class="banner-title" style="font-size: 93px; letter-spacing: 3px;">
 												rivojlantirishda&nbsp;&nbsp;</h1>
-											<h1
+											<h1  class="banner-title d-flex last-title"
 												style="font-size: 95px; letter-spacing: 8px; margin-top: 15px;">
-												yordam <span class="circle-word"> beramiz!<span
+												yordam <span class="circle-word ml-3"> beramiz!<span
 														class="circle-lottie"
 														data-path="https://viamsterdam.com/wp-content/themes/studio-vi/assets/animations/Circle_7.json"><svg
 															xmlns="http://www.w3.org/2000/svg"
@@ -3642,7 +3679,7 @@
 						<section id=" " class="mt-5">
 							<div class="container mt-5">
 								<div class="videoBlock__video">
-									<iframe style="width: 100%; margin-top: 50px;" height="650" src="https://www.youtube.com/embed/vJYiNf5KykU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+									<iframe style="width: 100%; margin-top: 50px;" class="ytframe" height="650" src="https://www.youtube.com/embed/vJYiNf5KykU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 								</div>
 							</div>
 						</section>
